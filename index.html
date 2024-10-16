@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of John Wick, a front-end developer showcasing skills, services, and hobbies.">
+    <title>John Wick - Front-End Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d31eea2963.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <nav>
+            <img src="photos/Gagan6.png" alt="John Wick's profile picture" class="logo">
+            <ul id="sidemenu">
+                <i class="fa-solid fa-xmark star" onclick="closemenu()"></i>
+                <li class="LIST"><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Hobbies</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars star" onclick="openmenu()"></i>
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1>Welcome to the Realm of <span>John Wick</span> <br> Where Precision Meets Passion</h1>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="photos/jhon2.jpg" alt="John Wick">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Born into a world shrouded in shadows, I emerged from the ruins of my past in Padhorje, Byelorussian SSR. Orphaned and alone, fate led me to a mentor—an enigmatic figure entrenched in the underworld. Under his tutelage, I honed my skills, transformed into a weapon, and adopted the name "John Wick." Trained in martial arts, firearms, and the art of stealth, I walk the fine line between creator and destroyer.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Martial Arts</span><br> Unmatched prowess in hand-to-hand combat.</li>
+                        <li><span>Firearms</span><br> Master of precision—my aim is deadly.</li>
+                        <li><span>Escapology</span><br> A master of evasion—no trap can hold me.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Martial Arts</span><br>⭐⭐⭐⭐⭐</li>
+                        <li><span>Firearms</span><br>⭐⭐⭐⭐⭐</li>
+                        <li><span>Escapology</span><br>⭐⭐⭐⭐⭐</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Military Career</span><br> Served in the elite United States Marine Corps, mastering covert operations.</li>
+                        <li><span>Career as a Hitman</span><br> Known as Baba Yaga—the boogeyman of the underworld.</li>
+                        <li><span>Organization</span><br> Aligned with the Tarasov Mob, executing high-stakes contracts with precision.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Crafting immersive websites that captivate users—where every pixel is a testament to my skill.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Programming</h2>
+                <p>Using the languages of the digital realm—Python and JavaScript—to forge responsive masterpieces.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Prompt Developer</h2>
+                <p>Creating digital assistants to navigate the chaos and empower decisions.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photos/jhon6.jpg" alt="Testing firearms">
+                <div class="layer">
+                    <h3>Testing Firearms</h3>
+                    <p>Staying ahead of the game—evaluating the latest in weaponry.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/jhon7.jpg" alt="Riding cars">
+                <div class="layer">
+                    <h3>Riding Cars</h3>
+                    <p>The thrill of speed—each ride a dance between man and machine.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/jhon8.jpg" alt="Love dogs">
+                <div class="layer">
+                    <h3>Love Dogs</h3>
+                    <p>In the chaos of life, they are my peace—keeping my loyal companion clean and happy.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> gagansalian@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 6361140918</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="photos/text3.txt" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 John Wick. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
